@@ -1,0 +1,140 @@
+@font-face {
+  font-family: Avengers;
+  src: url(/css/AvengeanceHeroicAvengerBold-MM2J.ttf);
+}
+
+h1{ /* avengers title  */
+  font-family: Avengers, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+body{
+  /* avengers endgame gradient color background */
+  background-color: #5944c9; /* for browsers that dont support gradients */
+  background-image: linear-gradient(to bottom right, #260e62, #b82c53, #5944c9);
+}
+
+.skip{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+ .skip:focus{ /* skip to main becomes visible */
+  display: inline-block;
+  position: static;
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 50px;
+  font-family: Avengers, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: justify;
+  padding: 30px 100px;
+}
+
+#headerimg{ /* avengers photo in header */
+  width: 100%;  /* avengers photo is responsive */
+}
+
+.intro{ /* intro paragraph */
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.movie-gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-gallery > img{
+  height: auto;
+  width: 30%;
+  padding: 20px;
+}
+
+.poster{
+  display: inline-block;
+  position: relative; 
+  perspective: 1000px;
+  width: 30%;
+  transform-style: preserve-3d;
+}
+
+.poster > img{
+  /* shadow behind posters  */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  transition: 0.3s;
+}
+
+ .front, .back {
+  
+   /* front AND back of poster  */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transition: transform 0.6s;
+  backface-visibility: hidden; 
+} 
+
+.poster:hover img {
+  transform: scale(1.1); /* slightly enlarge poster on hover*/
+}
+  
+ .front img {
+  /* flip poster */
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add shadow  */
+ } 
+
+ .back { 
+  /* flip poster back to original position */
+  transform: rotateY(180deg);
+} 
+
+.stars{
+  /* gold stars for movie ratings */
+  color: #c2bfaf;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer-content > p{
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.icons{ /* center the icons and have them next to each other */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons > p{
+  padding: 10px;
+}
