@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Avenger's Archive</title>
     <link rel="icon" href="images/avengersa.jpg"> 
 </head>
@@ -26,60 +26,170 @@
         MCU and share some of my reviews!</p>
     </div>
 
-    <div class="movie-gallery">
-        <div class="poster">
+    <div class="sorting-buttons"> <!-- sorting buttons -->
+        <button id="sort-chronological">Sort Chronologically</button>
+        <button id="sort-release-order">Sort by Release Order</button>
+    </div>
+
+    <div class="movie-gallery" id="movie-gallery">
+        <div class="poster" data-release-date="2008-05-02" data-original-index="1">
             <div class="front">
                 <img src="images/iron-man.jpg" alt="Iron Man Poster (2008)">
             </div>
-            <div class="back">
+            <div class="back" id="ironman">
                 <div class="opinion">
-                <p>Iron Man (2008)</p>
-                <p>Rating: <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star">
-                    </i></span>
-                </p>
-                <p>An enthralling start to the franchise. RDJ is so charasmatic,
-                    so that even when he was being a huge pain, you can't help 
-                    but root for him.
-                </p>
+                    <p>Iron Man (2008)</p>
+                    <p>Rating: <span class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i></span>  <!-- half star -->
+                    </p>
+                    <p>An enthralling start to the franchise. RDJ is so charasmatic,
+                        so that even when he was being a huge pain, you can't help 
+                        but root for him. This is not a story about Superman, he's not 
+                        the super sweet boy next door saving cats from burning buildings.
+                        Get ready to be thrust into the world of notorious billionaire, 
+                        playboy, philanthropist Tony Stark as he embarks on a journey of 
+                        self-discovery, empathy, and betrayal.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="poster">
+
+
+        <div class="poster" data-release-date="2008-06-13">
             <div class="front">
-                <img src="images/hulk.jpg" alt="Hulk Poster (2008)">
+                <img src="images/hulk.jpg" alt="Hulk Poster (2008)" data-original-index="3">
             </div>
-            <div class="back">
+            <div class="back" id="hulk">
                 <div class="opinion">
-                <p>The Incredible Hullk (2008)</p>
-                <p>Rating: <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star">
-                    </i></span>
-                </p>
-                <p>HULK SMAASH
-                </p>
+                    <p> Hulk (2008)</p>
+                    <p>Rating: <span class="stars">
+                        <i class="fas fa-star"></i><!-- full star -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i></span> <!-- empty star -->
+                    </p>
+                    <p>The black sheep of the MCU. Many within the fandom prefer
+                        to not acknowledge the existence of the movie. While it's definitely
+                        not my favorite, it is not unwatchable! Could you imagine being completely 
+                        normal one day and being able to transform to an fantasy-like monster-creature 
+                        overnight? Poor Bruce just wants to sleep but the government won't let him, smh. 
+                        I wasn't totally sold on the romantic subplot of Betty and Bruce (chemistry 
+                        was in fact NOT really there), but the story itself is cohesive. Don't get 
+                        attached to Edward Norton, though. This is his first AND last appearance as 
+                        Bruce in the MCU.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="poster">
+
+        <div class="poster" data-release-date="2010-05-07">
             <div class="front">
-                <img src="images/iron-man2.jpg" alt="Iron Man 2 Poster (2010)">
+                <img src="images/iron-man2.jpg" alt="Iron Man 2 Poster (2010)" data-original-index="2">
             </div>
-            <div class="back">
+            <div class="back" id="ironman2">
                 <div class="opinion">
-                <p>Iron Man 2 (2010)</p>
-                <p>Rating: <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star">
-                    </i></span>
-                </p>
-                <p> IRON MAN 2
-                </p>
+                    <p> Iron Man 2 (2010)</p>
+                    <p>Rating: <span class="stars">
+                        <i class="fas fa-star"></i><!-- full star -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i></span> <!-- empty star -->
+                    </p>
+                    <p> RDJ returns and gives a stellar performance as Tony Stark, now being
+                        forced to confront some of the repercussions of revealing his identity 
+                        as Iron Man to the world. To be honest, the villain is pretty forgettable, 
+                        but it's still a fun watch, I have rewatched multiple times. This movie 
+                        also marks the introdcution of Scarlett Johansson as Black Widow! The wig 
+                        leaves lots to be desired (lol) but her performance was stellar. 
+                    </p>
                 </div>
             </div>
         </div>
-        <img src="images/thor.jpg" alt="Thor Poster (2011)">
-        <img src="images/first-avenger.jpg" alt="Captain America: The First Avenger Poster (2011)">
-        <img src="images/avengers2012.jpg" alt="Avengers Poster (2012)">
+
+        <div class="poster" data-release-date="2011-05-02">
+            <div class="front">
+                <img src="images/thor.jpg" alt="Thor Poster (2011)" data-original-index="4">
+            </div>
+            <div class="back" id="thor">
+                <div class="opinion">
+                    <p> Thor (2011)</p>
+                    <p>Rating: <span class="stars">
+                        <i class="fas fa-star"></i><!-- full star -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i></span> <!-- empty star -->
+                    </p>
+                    <p> This movie has AWFUL reviews, but I really liked it! It a great introduction 
+                        to Thor and Chris Hemsworth is so adorable as the himbo God of Thunder. The 
+                        pacing of the story and the redemption arc is one that you're actively 
+                        rootiing for. Honestly, I don't have too much I dislike. However, everyone 
+                        seems to hate the romance between Thor and Jane, but I thought it was cute 
+                        enough. But that kiss at the end was so...weird and aggresive. 0/10. But 
+                        other than that, great movie!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="poster" data-release-date="2011-07-19" data-original-index="0">
+            <div class="front">
+                <img src="images/first-avenger.jpg" alt="Captain America: The First Avenger Poster (2011)">
+            </div>
+            <div class="back" id="catfa">
+                <div class="opinion">
+                    <p> Captain America: The First Avenger Poster (2011)</p>
+                    <p>Rating: <span class="stars">
+                        <i class="fas fa-star"></i><!-- full star -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i></span> <!-- empty star -->
+                    </p>
+                    <p> Honestly, I did not appreciate this movie for the awesome relationship building 
+                        it was when I first watched it. Pay close attention to Bucky (if you don't future 
+                        movies will get confusing REALLY quick)! To me, this is the first movie where you 
+                        can start to feel the world building of the MCU and the connection of the different 
+                        characters. Also consider Cap's character here, the transformation over the subsequent 
+                        movies is simply ART.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="poster" data-release-date="2012-05-04" data-original-index="5">
+            <div class="front">
+                <img src="images/avengers2012.jpg" alt="Avengers Poster (2012)">
+            </div>
+            <div class="back" id="avengers">
+                <div class="opinion">
+                    <p> Avengers (2012)</p>
+                    <p>Rating: <span class="stars">
+                        <i class="fas fa-star"></i> <!-- full star -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i></span> 
+                    </p> 
+                    <p> I was SAT. All the initial movies were leading up to this moment. The Earth's 
+                    Mightiest Heroes coming together for the first time to save the world. It's action-packed, 
+                    filled with fun banter and iconic scenes. My soul practically left my body the first time 
+                    the theme played and the camera circled the orginal six heroes: Captain America, Iron Man, 
+                    Thor, the Hulk, Black Widow, and Hawkeye. This was one of those movies I wish I saw in 
+                    theatres or could rewatch for the first time. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+        
     </div>
 </main>
 
@@ -87,27 +197,79 @@
         <div class="footer-content">
         <p> Sydney Emuakhagbon © 2024</p>
             <div class="icons">
-                <p><a href="mailto:semuak@umich.edu"><img src="/images/email-icon.jpg" alt="Email Icon" 
+                <p><a href="mailto:semuak@umich.edu"><img src="../images/email-icon.jpg" alt="Email Icon" 
                 style="max-width:30px;max-height:30px;"></a></p>
-                <p><a href="https://www.linkedin.com/in/sydney-emuakhagbon-9967891a8"><img src="/images/linkedin-img.jpg" 
+                <p><a href="https://www.linkedin.com/in/sydney-emuakhagbon-9967891a8"><img src="../images/linkedin-img.jpg" 
                 alt="LinkedIn Icon" style="max-width:42px;max-height:42px;"></a></p>      
             </div>
         </div>
     </footer>
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-    var posters = document.querySelectorAll('.movie-gallery .poster');
+        document.addEventListener('DOMContentLoaded', function () {
+            var posters = document.querySelectorAll('.movie-gallery .poster');
 
-    posters.forEach(function (poster) {
-    poster.addEventListener('click', function () {
-      flipPoster(poster); //  flip function on click
+            posters.forEach(function (poster) {
+                poster.addEventListener('click', function () {
+                    flipPoster(poster); //  flip function on click
+                });
+            });
+        
+        
+        function flipPoster(poster) {
+            poster.classList.toggle('flipped');
+        }
+        
+        // chronological order
+        function sortChronological() {
+            let gallery = document.getElementById('movie-gallery');
+            let posters = Array.from(gallery.children);
+            posters.sort((a, b) => {
+                let indexA = parseInt(a.dataset.originalIndex);
+                let indexB = parseInt(b.dataset.originalIndex);
+                return indexA - indexB;
+            });
+            // Rearrange posters in the gallery according to the sorted order
+            posters.forEach((poster, index) => {
+                gallery.appendChild(poster);
+            });
+
+            posters.forEach(poster => gallery.appendChild(poster));
+        }
+
+        // sort posters by release order
+        function sortReleaseOrder() {
+            let gallery = document.getElementById('movie-gallery');
+            let posters = Array.from(gallery.children);
+            posters.sort((a, b) => {
+                let releaseDateA = new Date(a.dataset.releaseDate);
+                let releaseDateB = new Date(b.dataset.releaseDate);
+                return releaseDateA - releaseDateB;
+            });
+            
+            // Rearrange posters in the gallery according to the sorted order
+            posters.forEach((poster, index) => {
+                gallery.appendChild(poster);
+            });
+
+            posters.forEach(poster => gallery.appendChild(poster));
+        }
+
+        // sort posters chronologically when button is clicked
+        document.getElementById('sort-chronological').addEventListener('click', function () {
+            sortChronological(); 
+        });
+
+        // sort posters in release order when button is clicked
+        document.getElementById('sort-release-order').addEventListener('click', function () {
+            sortReleaseOrder(); 
+        });
+
+        // default by sorting release order
+        sortReleaseOrder(); 
+        
     });
-  });
-});
     
-    function flipPoster(poster) {
-        poster.classList.toggle('flipped');
-      }
+
     </script>
 
 
